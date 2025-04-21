@@ -1,0 +1,174 @@
+<xml version="1.0" encoding="UTF-8">
+  <!-- Before the Bakery !-->
+  <room name="Bayou Outskirts" description="The outskirts of the bayou where the Bayou Bakery resides." fishable="false">
+    <door direction="north" name="Stomped Down Path" description="A path of stomped down sticks and bushes leading into the Bayou." locked="false"/>
+    <player name="You!" description="Quit looking through my XML!"/>
+  </room>
+
+  <room name="Mire of Muck" description="Your feet sink into the thick mud coating the ground." fishable="false">
+    <door direction="north" name="Muddy Path" description="A muddy path leading to and from a pond." locked="false"/>
+    <door direction="south" name="Stomped Down Path" description="A path of stomped down sticks and bushes leading into the Bayou." locked="false"/>
+    <door direction="west" name="Gravel Path" description="A road paved with gravel leading to and from the bakery." locked="false"/>
+    <employee name="Dale" description="A bearded man digging for crawfish in the mud." distracted="true"/>
+    <item name="Elephant Rifle" description="A large rifle the man must have brought with him. This thing could kill an alligator!" weight="15" carriable="false" hidden="false" can_fish="false"/>
+  </room>
+
+  <room name="Fishing Pond" description="A pond ripe with fish, popular with the bakery employees on break." fishable="true">
+    <door direction="south" name="Muddy Path" description="A muddy path leading to and from a pond." locked="false"/>
+    <employee name="Dylan" description="A skinny, long-haired man wearing a beanie." distracted="true"/>
+    <employee name="Damian" description="A red-haired man with odd tastes in facial hair." distracted="true"/>
+    <item name="Fish Bucket" description="A bucket full of fish that Dylan has caught so far." weight="24" carriable="false" hidden="false" can_fish="false">
+      <key name="Keyfish" description="A fish who's unique shape allows it to be used as a lockpick!" door="" weight="3" carriable="true" hidden="true" master_key="true"/>
+  </item>
+  </room>
+
+  <room name="Fork in the Road" description="A fork in the road, one way leading to the bakery and the other to a small dock." fishable="false">
+    <door direction="north" name="Bakery Road" description="A long road leading to and from the Bayou Bakery." locked="false"/>
+    <door direction="south" name="Dock Path" description="The continuing gravel path that leads to and from a small dock." locked="false"/>
+    <door direction="east" name="Gravel Path" description="A road paved with gravel leading to and from the bakery." locked="false"/>
+  </room>
+
+  <room name="Small Dock" description="A rickety wooden dock with a small canoe. Must have been used by the Bayou Bakery at some point." fishable="true">
+    <door direction="north" name="Dock Path" description="The continuing gravel path that leads to and from a small dock." locked="false"/>
+  </room>
+
+  <!-- Into the Bakery !-->
+  <room name="Bakery Courtyard" description="A spacious, well guarded courtyard leading to the Bayou Bakery." fishable="false">
+    <door direction="north" name="Bakery Door" description="A large, rusty metal door that leads into the bakery." locked="true"/>
+    <door direction="south" name="Bakery Road" description="A long road leading to and from the Bayou Bakery." locked="false"/>
+    <door direction="west" name="Tool Shed Door" description="A small door on a tool shed." locked="true"/>
+    <guard name="Talon" description="A portly, balding man." sleeping="false"/>
+    <guard name="Ingo" description="A skinny, moustached man with a crazed look in his eye." sleeping="false"/>
+  </room>
+
+  <room name="Tool Shed" description="A small tool shed containing, well, tools." fishable="false">
+    <door direction="east" name="Tool Shed Door" description="A small door on a tool shed." locked="true"/>
+    <item name="Toolbox" description="A large metal toolbox." weight="63" carriable="false" hidden="false" can_fish="false">
+      <key name="Bakery Entrance Key" description="A rusty iron key that unlocks the Bakery Door" door="Bakery Door" weight="0" carriable="true" hidden="true" master_key="false"/>
+      <item name="Flashbang" description="A gray, metal canister. Blinds everybody in the room when thrown." weight="6" carriable="true" hidden="true" can_fish="false"/>
+    </item>
+    <item name="Fishing Rod" description="A rod for fishing. It's telescopic, so it's easy to carry with you!" weight="5" carriable="true" hidden="false" can_fish="true"/>
+  </room>
+
+  <room name="Employee Locker Room" description="A locker room where employees " fishable="false">
+    <door direction="north" name="Mixing Room Door" description="An overhead, sheet metal door leading to and from the mixing room." locked="false"/>
+    <door direction="south" name="Bakery Door" description="A large, rusty metal door that leads into the bakery." locked="true"/>
+    <item name="Lockers" description="Rusty, metal lockers." weight="600" carriable="false" hidden="false" can_fish="false">
+      <item name="Half-Empty Beer Can" description="Ew." weight="1" carriable="true" hidden="true" can_fish="false"/>
+    </item>
+  </room>
+
+  <room name="Mixing Room" description="The room where the cookie ingredients are mixed." fishable="false">
+    <door direction="south" name="Mixing Room Door" description="An overhead, sheet metal door leading to and from the mixing room." locked="false"/>
+    <door direction="east" name="Baking Room Door" description="A small door leading to and from the baking room." locked="false"/>
+    <door direction="west" name="Pantry Door" description="A small closet door leading to and from the pantry." locked="false"/>
+    <employee name="Cleetus" description="A balding man that's missing a few teeth." distracted="false"/>
+    <employee name="Wade" description="a nice young lady taking a break." distracted="true"/>
+    <item name="Pile of Ingredients" description="A pile of ingredients. The containers are unmarked." weight="28" carriable="false" hidden="false" can_fish="false">
+      <key name="CEO Office Key" description="A key to Swamp Master's office!" door="CEO Office Door" weight="0" carriable="true" hidden="true" master_key="false"/>
+      <item name="Bottle of Red Liquid" description="An unmarked bottle with some kind of red liquid in it. Could this be the secret ingredient?" weight="1" carriable="true" hidden="true"/>
+    </item>
+  </room>
+
+  <room name="Pantry" description="A rather large pantry where all the ingredients for the cookies are stored." fishable="false">
+    <door direction="west" name="Pantry Door" description="A small closet door leading to and from the pantry." locked="false"/>
+    <item name="Indistinguishable Pile" description="An unorganized mass of ingredients." weight="940" carriable="false" hidden="false" can_fish="false">
+      <item name="Flashbang" description="A gray, metal canister. Blinds everybody in the room when thrown." weight="6" carriable="true" hidden="true" can_fish="false"/>
+      <item name="Spoiled Milk" description="I suppose this would explain the smell..." weight="1" carriable="true" hidden="true" can_fish="false"/>
+    </item>
+  </room>
+
+  <room name="Baking(?) Room" description="It's more like... boiling. Gross." fishable="false">
+    <door direction="north" name="Break Room Door" description="A door leading to and from the break room." locked="false"/>
+    <door direction="west" name="Baking Room Door" description="A small door leading to and from the baking room." locked="false"/>
+    <employee name="Frank" description="A very large, scary man lifting ingredients into a vat." distracted="true"/>
+    <employee name="Bob" description="A very small, unassuming man stiring the vat." distracted="true"/>
+    <item name="Giant Vat" description="A giant vat where the ingredients are put. It's bubbling a green liquid." weight="950" carriable="false" hidden="false" can_fish="false"/>
+  </room>
+
+  <room name="Break Room" description="where the ale for the castle is made." fishable="false">
+    <door direction="north" name="Packaging Room Door" description="A door leading to and from the packaging room." locked="false"/>
+    <door direction="south" name="Break Room Door" description="A door leading to and from the baking room." locked="false"/>
+    <door direction="east" name="Smoking Area Door" description="A door leading to and from the smoking area." locked="false"/>
+    <guard name="Brock" description="A man with spikey hair sleeping face down on a table." sleeping="true"/>
+    <employee name="Earl" description="A man eating an entire sleeve of crackers." distracted="false"/>
+  </room>
+
+  <room name="Smoking Area" description="An outdoor area where employees can smoke. Not that it stops them from smoking inside." fishable="true">
+    <item name="Fishing Rod" description="A very heavy fishing rod, it feels like its made from lead! A little unwieldly, but it'll do." weight="12" carriable="true" hidden="false" can_fish="true"/>
+    <door direction="east" name="Smoking Area Door" description="A door leading to and from the smoking area." locked="false"/>
+  </room>
+
+  <room name="Packaging Room" description="A room where the cookies are cooled and packaged." fishable="false">
+    <door direction="south" name="Packaging Room Door" description="A door leading to and from the packaging room." locked="false"/>
+    <door direction="west" name="Security Room Door" description="A door leading to and from the security room." locked="false"/>
+    <employee name="Clint" description="A man packaging cookies in Swamp Master branded wrappers." distracted="false"/>
+    <item name="Pile of Wrappers" description="A pile of wrappers, each branded with Swamp Master's brand." weight="20" carriable="false" hidden="false" can_fish="false">
+      <key name="Upstairs Bathroom Key" description="A key to the upstairs bathroom. Why do they have only have one bathroom here? Why is the key down here?!" door="Bathroom Door" weight="0" carriable="true" hidden="true" master_key="false"/>
+    </item>
+  </room>
+
+  <room name="Security Room" description="A room where the guards are SUPPOSED to be watching the cameras. They mainly just hang out." fishable="false">
+    <door direction="north" name="Stairwell" description="A set of stairs leading to the second floor." locked="false"/>
+    <door direction="east" name="Security Room Door" description="A door leading to and from the security room." locked="false"/>
+    <guard name="Link" description="A short, silent man wearing a lot of green." sleeping="false"/>
+    <guard name="Alfonzo" description="A stocky, tattooed man." sleeping="false"/>
+    <item name="Pool Table" description="It's essential to the guard's productivity!" weight="160" carriable="false" hidden="false" can_fish="false"/>
+    <item name="Key Drawer" description="A metal drawer where keys are kept." weight="60" carriable="false" hidden="false" can_fish="false">
+      <key name="Tool Shed Key" description="A key that unlocks the tool shed outside of the bakery." door="Tool Shed Door" weight="0" carriable="true" hidden="true" master_key="false"/>
+    </item>
+  </room>
+  
+  <!-- Second Floor !-->
+  <room name="Bayou Bakery Offices" description="A second floor office, where office workers do officer worker things." fishable="false">
+    <door direction="south" name="Stairwell" description="A set of stairs leading to the second floor." locked="false"/>
+    <door direction="west" name="Office Hallway" description="A hallway leading to and away from the office." locked="false"/>
+    <employee name="Harvey" description="An office worker. Yeah he's pretty boring." distracted="false"/>
+    <item name="Filing Cabinet" description="A cabinet for files. It's an office, what do you expect?" weight="180" carriable="false" hidden="false" can_fish="false">
+      <key name="Vault Combination" description="A piece of paper with the vault's combination on it." door="Vault Door" weight="0" carriable="true" hidden="true" master_key="false"/>
+    </item>
+  </room>
+
+  <room name="Office Hallway" description="A hallway connencted the office, bathroom, and CEO's office." fishable="false">
+    <door direction="north" name="CEO Office Door" description="A door leading to and from the office of the big man himself, Swamp Master." locked="true"/>
+    <door direction="south" name="Bathroom Door" description="A door leading to and from the bathroom." locked="true"/>
+    <door direction="east" name="Office Hallway" description="A hallway leading to and away from the office." locked="false"/>
+  </room>
+
+  <room name="Bathroom" description="A bathroom." fishable="true">
+    <door direction="north" name="Bathroom Door" description="A door leading to and from the bathroom." locked="true"/>
+    <employee name="Lorne" description="An office worker on his break. You can hear him watching YouTube in there." distracted="true"/>
+    <item name="Toilet" description="A toilet. Wait, is there something in there?!" weight="70" carriable="false" hidden="false" can_fish="false">
+      <item name="No. 2" description="What did you honestly expect?" weight="2" carriable="true" hidden="true" can_fish="false"/>
+    </item>
+  </room>
+
+  <room name="CEO's Office" description="Swamp Master's office." fishable="false">
+    <door direction="south" name="CEO Office Door" description="A door leading to and from the office of the big man himself, Swamp Master." locked="true"/>
+    <door direction="east" name="Vault Door" description="The door to the vault. Surely the recipe is in there!" locked="true"/>
+    <guard name="Arthur" description="A large, stocky man." sleeping="false"/>
+    <guard name="John" description="A slimmer man with distinct scars on his face." sleeping="false"/>
+    <item name="Suspicious Poster" description="This poster just doesn't look right... sure enough, the wall behind is hallowed out." weight="4" carriable="false" hidden="false" can_fish="false">
+      <item name="Flashbang" description="A gray, metal canister. Blinds everybody in the room when thrown." weight="6" carriable="true" hidden="true" can_fish="false"/>
+    </item>
+  </room>
+
+  <room name="Vault" description="Swamp Master's vault." fishable="false">
+    <door direction="west" name="Vault Door" description="The door to the vault. Surely the recipe is in there!" locked="true"/>
+    <item name="Comically Large Pile of Gold" description="This is at least $7 million of pure gold." weight="2700" carriable="false" hidden="false" can_fish="false"/>
+    <item name="Small Glass Bottle" description="There looks to be something inside!" weight="7" carriable="true" hidden="false" can_fish="false">
+      <item name="Swamp Master's Secret Recipe" description="There it is! At last, the recipe!" weight="0" carriable="true" hidden="true" can_fish="false"/>
+    </item>
+  </room>
+
+
+
+
+
+  <room name="Fishing Loot Table" description="Not accessable to the player. Used to store all possible items the player can obtain from fishing." fishable="false">
+    <key name="Keyfish" description="A fish who's unique shape allows it to be used as a lockpick!" door="" weight="3" carriable="true" hidden="false" master_key="true"/>
+    <item name="Rabbit's Foot" description="A lucky rabbit's foot! You're not sure what it does, but carrying it with you can't be bad!" weight="5" carriable="true" hidden="false" fishable="false"/>
+    <item name="Stun Snail" description="A snail who's shell doubles as a flashbag! Throw it to the ground to blind everyone in the area! (Type 'stun' to use)" weight="2" carriable="true" hidden="false" fishable="false"/>
+  </room>
+
+</xml>
